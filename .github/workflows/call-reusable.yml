@@ -8,4 +8,4 @@ jobs:
     with:
       config-path: this/is/a/config-path.txt
     secrets:
-      envPAT: ${{ secrets.lmao }}
+      envPAT: inherit
