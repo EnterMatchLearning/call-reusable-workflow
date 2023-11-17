@@ -1,0 +1,11 @@
+name: call-reusable
+on:
+  # push:
+  workflow_dispatch:
+jobs:
+  call-workflow-passing-data:
+    uses: EnterMatchOrg/actions-learning-pathway/.github/workflows/hello-world.yml@main
+    with:
+      config-path: this/is/a/config-path.txt
+    secrets:
+      envPAT: ${{ secrets.lmao }}
