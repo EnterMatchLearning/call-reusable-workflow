@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Custom Action
-        uses: EnterMatchOrg/actions-learning-pathway/actions/action@v1.0.0
+        uses: EnterMatchOrg/actions-learning-pathway/actions@v1.0.0
         with:
           who-to-greet: EnterMatch
