@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
 jobs:
   le-job:
-    - name: Run Custom Action
-      uses: VictorDuranEM/actions-learning-pathway/actions/action@v1.0.0
-      with:
-        who-to-greet: EnterMatch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Custom Action
+        uses: VictorDuranEM/actions-learning-pathway/actions/action@v1.0.0
+        with:
+          who-to-greet: EnterMatch
