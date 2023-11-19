@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   le-job:
-    uses: VictorDuranEM/actions-learning-pathway/actions/action@v1.0.0
-    with:
-      who-to-greet: EnterMatch
+    - name: Run Custom Action
+      uses: VictorDuranEM/actions-learning-pathway/actions/action@v1.0.0
+      with:
+        who-to-greet: EnterMatch
