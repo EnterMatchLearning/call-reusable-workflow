@@ -1,0 +1,9 @@
+name: call-custom-action
+on:
+  # push:
+  workflow_dispatch:
+jobs:
+  le-job:
+    uses: VictorDuranEM/actions-learning-pathway/actions/action@v1.0.0
+    with:
+      who-to-greet: EnterMatch
